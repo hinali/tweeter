@@ -3,7 +3,7 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
+ html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -14,12 +14,30 @@ html {
  * Global layout stuff
  */
 
-body {
+body, .tweeter-logo {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.tweeter-logo {
+  font-family: 'Bungee', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ main {
+  width: 90%;
+  margin: 0 auto;
+  background-color:lightsteelblue;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  padding: 20px;
+  flex: 2;
+  color: black;
+  
+ }
