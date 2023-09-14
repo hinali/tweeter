@@ -5,11 +5,9 @@
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
 
-
   <!-- External CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     type="text/css" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@1,300;1,600&display=swap"
@@ -19,6 +17,7 @@
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" /> <!-- Link to your new-tweet.css file -->
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -48,31 +47,25 @@
       </div>
       <br>
       <div class="name">
-        <h2>Your Name</h2>
+        <h2>HINALI</h2>
       </div>
     </header>
 
-
-
     <!-- Page-specific (main) content here -->
     <main class="container">
-      Inside the main container element, add the following HTML markup to create the form:
-
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form action="/tweets/" method="POST">
-
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
-          <div>
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+          <div class="form-footer"> <!-- Added a container for the button and counter -->
+            <button type="submit">Tweet</button> <!-- "Tweet" button on the left -->
+            <output name="counter" class="counter" for="tweet-text">140</output> <!-- "140" counter on the right -->
           </div>
         </form>
       </section>
-
-
     </main>
+  </div>
 </body>
 
 </html>

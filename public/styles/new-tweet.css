@@ -1,31 +1,55 @@
-.form {
-  display: flex;
- font-weight: bold;
+/* Style the new-tweet section */
+.new-tweet {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  width: 100%; /* Make the form take up full width */
 }
 
-.button {
-  font-family: bungee;
-  color: #FFFFFF;
-  background-color: #4056A1; 
-  margin-top: 20px;
-}
-
-.textBox {
+/* Style the form elements inside the new-tweet section */
+.new-tweet form {
   display: flex;
-  background-color: #f4f1ec;
   flex-direction: column;
-  border-left-style: hidden;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-bottom: 5px solid;
-  width: 100%;
+  width: 100%; /* Make the form take up full width */
 }
 
-.counter {
-  display: flex;
-  justify-content: flex-end;
-  font-family: bungee;
-  font-weight: bolder;
-  margin-top: -40px;
+.new-tweet label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
+.new-tweet .form-footer {
+  display: flex;
+  justify-content: space-between; /* Put items at the start and end of the container */
+  align-items: center; /* Vertically center items */
+  margin-top: 10px;
+}
+
+.new-tweet textarea {
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  width: 100%; /* Make the textarea take up full width */
+}
+
+.new-tweet button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto; /* Allow the button to have its natural width */
+}
+
+/* Style the counter output */
+.new-tweet .counter {
+  font-size: 30px;
+  color: #181515;
+  margin-top: 5px;
+  font-weight: bold;
 }
