@@ -29,9 +29,9 @@ body, .tweeter-logo {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
  main {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  background-color:lightsteelblue;
+  background-color:rgb(215, 226, 240);
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   display: flex;
   flex-direction:row;
