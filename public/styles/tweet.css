@@ -1,0 +1,80 @@
+/* Style the tweet container */
+.tweet {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s ease;
+}
+
+/* Style the user's avatar */
+.tweet .user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Style the user's name */
+.tweet .user-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Style the user's handle */
+.tweet .user-handle {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Style the tweet content */
+.tweet .tweet-content {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Style the tweet footer */
+.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  color: #777;
+}
+
+/* Style the tweet time */
+.tweet .tweet-time {
+  font-size: 14px;
+}
+
+/* Style the tweet actions (icons) */
+.tweet .tweet-actions {
+  font-size: 20px;
+}
+
+
+/* Hover state for the flag icon on hover */
+.tweet .fa-flag:hover {
+  color: #ff0000; /* Change the flag color on hover (lighter red) */
+  transform: scale(1.1); /* Scale the icon slightly on hover */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add smooth transitions */
+}
+
+/* Change the color of the heart (like) icon on hover */
+.tweet .fa-heart:hover {
+  color: #e01515;
+}
+
+/* Change the color of the retweet icon on hover */
+.tweet .fa-retweet:hover {
+  color: #17bf63;
+}
+
+/* Hover state for the tweet */
+.tweet:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
