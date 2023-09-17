@@ -6,9 +6,6 @@
  html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
-}
 
 /*
  * Global layout stuff
@@ -36,7 +33,7 @@ body, .tweeter-logo {
   display: flex;
   flex-direction:row;
   justify-content: center;
-  padding: 20px;
+  padding: 5px;
   flex: 2;
   color: black;
   
