@@ -1,11 +1,16 @@
 /* Style the tweet container */
 .tweet {
   padding: 15px;
-  margin: 10px 0;
-  background-color:rgb(231, 238, 247);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(15, 15, 15, 0.5);
   transition: all 0.3s ease;
-  border: 5px solid rgba(249, 247, 247, 0.886);
+  background-color:rgb(217, 224, 238);
+  height: 200px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+ 
 }
 .user-avatar {
   width: 60px;
@@ -29,7 +34,7 @@
 .tweet .user-name {
   font-size: 25px;
   font-weight: bold;
-  margin-right: 930px;
+  margin-right: 980px;
   text-align: center;
   margin-top: 20px;
 }
