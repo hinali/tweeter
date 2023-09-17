@@ -1,20 +1,5 @@
 $(document).ready(function() {
 
-  const tweets = [
-    {
-      "user": {
-        "name": "Newton",
-        "avatars": "https://i.imgur.com/73hZDYK.png",
-        "handle": "@SirIsaac"
-      },
-      "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-      "created_at": 1461116232227
-    },
-    // Add more tweet objects as needed
-  ];
-
   const createTweetElement = function(tweet) {
     const $tweet = `
       <article class="tweet">
@@ -36,21 +21,33 @@ $(document).ready(function() {
     `;
     return $tweet;
   };
-    
 
   const renderTweets = function(tweets) {
 
-  for (const tweet of tweets) {
-    const $tweet = createTweetElement(tweet);
-    $('#tweets-container').append($tweet);
-    console.log('Tweet added:', $tweet);
-  }
-};
-
-// Sample tweet data for testing
-
-// Call renderTweets with the array of tweet data
-renderTweets(tweets);
+    for (const tweet of tweets) {
+      const $tweet = createTweetElement(tweet);
+      $('#tweets-container').append($tweet);
+    }
+  };
 
 
+  $('#tweet-form').submit(function(event) {
+    event.preventDefault();
+
+    const formData = $(this).serialize();
+
+    $.ajax({
+      url: '/tweets',
+      method: 'POST',
+      data: formData,
+      success: function(response) {
+        console.log("success;",response);
+      },
+      error: function(error) {
+        console.error('Error:', error);
+      }
+    });
+  });
+
+  
 });

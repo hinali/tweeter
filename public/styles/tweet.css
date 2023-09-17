@@ -2,8 +2,8 @@
 .tweet {
   padding: 15px;
   margin: auto;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(15, 15, 15, 0.5);
+  border-radius: 15px;
+  border-color: black;
   transition: all 0.3s ease;
   background-color:rgb(217, 224, 238);
   height: 200px;
