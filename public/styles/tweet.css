@@ -1,16 +1,10 @@
 /* Style the tweet container */
 .tweet {
-  padding: 15px;
-  margin: auto;
-  border-radius: 15px;
-  border-color: black;
-  transition: all 0.3s ease;
-  background-color:rgb(217, 224, 238);
-  height: 200px;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
- 
+  padding: 10px;
+  border: 5px solid black;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 .user-avatar {
   width: 60px;
@@ -34,7 +28,7 @@
 .tweet .user-name {
   font-size: 25px;
   font-weight: bold;
-  margin-right: 980px;
+  margin-right: 950px;
   text-align: center;
   margin-top: 20px;
 }
@@ -49,6 +43,13 @@
   font-size: 18px;
   margin-top: 10px;
 }
+/* Define a CSS class for the line */
+.footer-line {
+  border-top: 2px solid black; /* Adjust the color and style as needed */
+  margin-top: 10px; /* Optional: Add spacing above the line */
+  padding-top: 10px; /* Optional: Add padding above the line */
+}
+
 
 /* Style the tweet footer */
 .tweet footer {
