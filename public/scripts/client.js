@@ -41,6 +41,7 @@ $(document).ready(function() {
       method: 'POST',
       data: formData,
       success: function(response) {
+        loadTweets();
         console.log("success;",response);
       },
       error: function(error) {
@@ -49,5 +50,19 @@ $(document).ready(function() {
     });
   });
 
-  
+  const loadTweets = function() {
+    $.ajax({
+      url: '/tweets',
+      method: 'GET',
+      dataType: 'json',
+      success: function(tweets) {
+        renderTweets(tweets);
+      },
+      error: function(error) {
+        console.error('Error:', error);
+      }
+    });
+  };
+
+  loadTweets();
 });
