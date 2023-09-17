@@ -30,9 +30,28 @@ $(document).ready(function() {
     }
   };
 
+  function validateTweetText(tweetText) {
+    
+    if (!tweetText) {
+      alert('Tweet content cannot be empty.');
+      return false; // Validation failed
+    }
 
-  $('#tweet-form').submit(function(event) {
+    if (tweetText.length > 140) {
+      alert('Tweet content is too long. Maximum 140 characters allowed.');
+      return false; // Validation failed
+    }
+
+    return true; // Validation passed
+  };
+
+$('#tweet-form').submit(function(event) {
     event.preventDefault();
+    const tweetText = $('#tweet-text').val();
+
+    if (!validateTweetText(tweetText)) {
+      return;
+    }
 
     const formData = $(this).serialize();
 
@@ -42,7 +61,6 @@ $(document).ready(function() {
       data: formData,
       success: function(response) {
         loadTweets();
-        console.log("success;",response);
       },
       error: function(error) {
         console.error('Error:', error);
