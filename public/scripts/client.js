@@ -8,7 +8,7 @@ $(document).ready(function() {
           <label for="name" class="user-name user-info">${tweet.user.name}</label>
           <label for="username" style="color:rgb(173, 181, 237)">${tweet.user.handle}</label>
         </div>
-        <p class="tweet-content">${tweet.content.text}</p>
+        <p class="tweet-content">${$('<div>').text(tweet.content.text).html()}</p>
         <footer class="footer-line">
         <label>${timeago.format(tweet.created_at)}</label>
           <div class="tweet-actions footer_icons">
