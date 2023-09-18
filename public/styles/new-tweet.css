@@ -47,6 +47,20 @@
   width: auto; /* Allow the button to have its natural width */
 }
 
+/* styles.css */
+
+/* Style the error message container */
+.error-message {
+  color: red;
+  font-size: 20px;
+  margin-top: 8px;
+  display: none;
+  border: 2px solid red; /* Add a red border */
+  padding: 8px; /* Add padding to create space between the border and text */
+  font-weight: bold; /* Make the font bold */
+}
+
+
 /* Style the counter output */
 .new-tweet .counter {
   font-size: 30px;

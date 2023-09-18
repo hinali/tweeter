@@ -32,18 +32,24 @@ $(document).ready(function() {
     }
   };
   
+  const displayValidationError = function(message) {
+    const $errorElement = $('.error-message');
+    $errorElement.text(message).slideDown();
+  };
+
   function validateTweetText(tweetText) {
-    
     if (!tweetText) {
-      alert('Tweet content cannot be empty.');
+      displayValidationError('⚠️ Tweet content cannot be empty.⚠️');
       return false;
     }
 
     if (tweetText.length > 140) {
-      alert('Tweet content is too long. Maximum 140 characters allowed.');
+      displayValidationError('⚠️ Tweet content is too long. Maximum 140 characters allowed. ⚠️');
       return false; 
     }
 
+    // If validation passes, hide the error element
+    $('.error-message').slideUp();
     return true; 
   };
 
