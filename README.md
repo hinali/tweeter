@@ -19,6 +19,10 @@ The goal of this project is to create a functional and visually appealing Single
 - Error Message
 ![error-message](https://github.com/hinali/tweeter/blob/master/public/images/error-message.png)
 
+- Responsie design
+![header](https://github.com/hinali/tweeter/blob/master/public/images/mobile-view.png)
+![Tweets](https://github.com/hinali/tweeter/blob/master/public/images/responsivedesign-tweets.png)
+
 
 ## Dependencies
 
