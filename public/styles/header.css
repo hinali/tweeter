@@ -1,3 +1,4 @@
+/* Default styles for the header */
 header {
   width: 100%;
   height: 400px;
@@ -5,26 +6,39 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 120px;
-  background-color:rgb(215, 226, 240);
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  margin:auto;
+  padding-top: 60px;
+  background-color: rgb(216, 159, 12);
+  margin: auto;
 }
 
 .avatar img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: contain;
-  margin-top: 40px;
+  margin-top: 20px;
 }
-
 
 .name {
   margin-top: 2px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   justify-content: bottom;
-  color: #4056A1;
+  color: white;
 }
 
+@media screen  and (min-width: 1024px) {
+  header {
+     height: 300px;
+     width: 30%;
+     float: left;
+     margin: 150px 0px 0px 30px;
+     position: fixed;
+   }
+ 
+   .avatar img {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+ }

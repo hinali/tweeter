@@ -10,7 +10,11 @@
 /*
  * Global layout stuff
  */
-
+body {
+  background-color: white;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+ 
+}
 body, .tweeter-logo {
   color: #545149;
   background-color: #f4f1ec;
@@ -25,16 +29,20 @@ body, .tweeter-logo {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
- main {
-  width: 100%;
+ .container {
+  width: 90%;
   margin: 0 auto;
-  background-color:rgb(215, 226, 240);
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  display: flex;
   flex-direction:row;
   justify-content: center;
-  padding: 5px;
   flex: 2;
   color: black;
   
  }
+
+  @media screen and (min-width: 1024px) {
+  .container {
+    margin: 150px 50px 50px 150px;
+    width: 60%;
+    float: right;
+  }  
+} 

@@ -23,12 +23,19 @@
   text-align: center;
   padding-bottom: 50px;
 }
+.tweet-header {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-label {
+  margin-left: auto;
+}
 
 /* Style the user's name */
 .tweet .user-name {
   font-size: 25px;
   font-weight: bold;
-  margin-right: 950px;
   text-align: center;
   margin-top: 20px;
 }
@@ -92,3 +99,13 @@
   color: #17bf63;
 }
 
+@media (max-width: 768px) {
+  /* Modify styles for smaller screens here */
+  .tweet .user-name {
+    margin-right: 20px; /* Adjust margin for smaller screens */
+  }
+
+  .tweet .user-handle {
+    display: block;
+  }
+}

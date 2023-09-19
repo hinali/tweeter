@@ -1,8 +1,6 @@
 /* Style the new-tweet section */
 .new-tweet {
-  background-color:rgb(215, 226, 240);
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  margin: 20px;
+  margin: 20px 0;
   width: 100%; /* Make the form take up full width */
 }
 
@@ -15,7 +13,7 @@
 
 .new-tweet label {
   font-weight: bold;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .new-tweet .form-footer {
@@ -27,24 +25,23 @@
 
 .new-tweet textarea {
   display: flex;
-  background-color:rgb(215, 226, 240);
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   flex-direction: column;
   border-left-style: hidden;
   border-top-style: hidden;
   border-right-style: hidden;
   border-bottom: 5px solid;
-  width: 100%;
+  background-color: transparent;
 }
 
 .new-tweet button {
-  background-color: #4056A1;
+  background-color: rgb(216, 159, 12);
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  width: auto; /* Allow the button to have its natural width */
+  width: auto;
+  
 }
 
 /* styles.css */
@@ -68,4 +65,3 @@
   margin-top: 5px;
   font-weight: bold;
 }
-
