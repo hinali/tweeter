@@ -1,6 +1,7 @@
 /*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Reset box-sizing for all HTML elements
+ * More info: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * International Box-Sizing Awareness Day: https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
  html {
@@ -8,41 +9,46 @@
 }
 
 /*
- * Global layout stuff
+ * Global layout styles
  */
+
+/* Body styles */
 body {
   background-color: white;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
- 
 }
-body, .tweeter-logo {
+
+/* Body and .tweeter-logo styles */
+body,
+.tweeter-logo {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
 }
 
+/* .tweeter-logo specific styles */
 .tweeter-logo {
   font-family: 'Bungee', sans-serif;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
- .container {
+
+/* .container styles */
+.container {
   width: 90%;
   margin: 0 auto;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: center;
   flex: 2;
   color: black;
-  
- }
+}
 
-  @media screen and (min-width: 1024px) {
+/* Media query for screens with the width of 1024px */
+@media screen and (min-width: 1024px) {
+
   .container {
     margin: 150px 50px 50px 150px;
     width: 60%;
     float: right;
-  }  
-} 
+  }
+}

@@ -1,4 +1,4 @@
-/* Style the tweet container */
+/* Tweet Container */
 .tweet {
   padding: 10px;
   border: 5px solid black;
@@ -6,6 +6,8 @@
   border-radius: 5px;
   margin-top: 20px;
 }
+
+/* User Avatar */
 .user-avatar {
   width: 60px;
   height: 50px; 
@@ -14,51 +16,58 @@
   margin-top: 10px;
 }
 
+/* User Icon */
 .user-icon {
   font-size: 30px;
   padding-bottom: 50px;
 }
+
+/* Center Alignment */
 .center-align {
   display: flex;
   text-align: center;
   padding-bottom: 50px;
 }
+
+/* Tweet Header */
 .tweet-header {
   display: flex;
   align-items: center;
 }
 
+/* Tweet Label */
 .tweet-label {
   margin-left: auto;
 }
 
-/* Style the user's name */
+/* User Name */
 .tweet .user-name {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
 }
-/* Style the user's handle */
+
+/* User Handle (Username) */
 .tweet .user-handle {
   font-size: 14px;
   color: #777;
 }
 
-/* Style the tweet content */
+/* Tweet Content */
 .tweet .tweet-content {
   font-size: 18px;
   margin-top: 10px;
 }
-/* Define a CSS class for the line */
+
+/* Line Separator */
 .footer-line {
-  border-top: 2px solid black; /* Adjust the color and style as needed */
-  margin-top: 10px; /* Optional: Add spacing above the line */
-  padding-top: 10px; /* Optional: Add padding above the line */
+  border-top: 2px solid black;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 
-
-/* Style the tweet footer */
+/* Tweet Footer */
 .tweet footer {
   display: flex;
   justify-content: space-between;
@@ -67,45 +76,45 @@
   color: #777;
 }
 
-/* Style the tweet time */
+/* Tweet Time */
 .tweet .tweet-time {
   font-size: 14px;
 }
 
-/* Style the tweet actions (icons) */
+/* Tweet Actions (Icons) */
 .tweet .tweet-actions {
   font-size: 20px;
   display: flex;
-  justify-content: flex-end; /* Align the icons to the right */
+  justify-content: flex-end;
   align-items: center;
 }
 
-
-
-/* Hover state for the flag icon on hover */
-.tweet .fa-flag:hover {
-  color: #ff0000; /* Change the flag color on hover (lighter red) */
-  transform: scale(1.1); /* Scale the icon slightly on hover */
-  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add smooth transitions */
+/* Add a box shadow on hover */
+.tweet:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Change the color of the heart (like) icon on hover */
+/* Hover state for the flag icon */
+.tweet .fa-flag:hover {
+  color: #ff0000;
+  transform: scale(1.1);
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover state for the heart icon */
 .tweet .fa-heart:hover {
   color: #e01515;
 }
 
-/* Change the color of the retweet icon on hover */
+/* Hover state for the retweet icon */
 .tweet .fa-retweet:hover {
   color: #17bf63;
 }
 
+/* Media query for smaller screens (max-width: 768px) */
 @media (max-width: 768px) {
-  /* Modify styles for smaller screens here */
-  .tweet .user-name {
-    margin-right: 20px; /* Adjust margin for smaller screens */
-  }
 
-  .tweet .user-handle {
-    display: block;
+  .tweet .user-name {
+    margin-right: 20px;
   }
 }

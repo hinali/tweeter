@@ -11,6 +11,7 @@ header {
   margin: auto;
 }
 
+/* Avatar styles */
 .avatar img {
   width: 150px;
   height: 150px;
@@ -19,6 +20,7 @@ header {
   margin-top: 20px;
 }
 
+/* Name styles */
 .name {
   margin-top: 2px;
   text-align: center;
@@ -27,18 +29,21 @@ header {
   color: white;
 }
 
-@media screen  and (min-width: 1024px) {
+/* Media query for screens with width of 1024px */
+@media screen and (min-width: 1024px) {
+
   header {
-     height: 300px;
-     width: 30%;
-     float: left;
-     margin: 150px 0px 0px 30px;
-     position: fixed;
-   }
- 
-   .avatar img {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
- }
+    height: 300px;
+    width: 30%;
+    float: left;
+    margin: 150px 0px 0px 30px;
+    position: fixed;
+  }
+
+  /* Center avatar image on larger screens */
+  .avatar img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

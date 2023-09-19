@@ -1,28 +1,31 @@
-/* Style the new-tweet section */
+/* Styles for the New Tweet Section */
 .new-tweet {
   margin: 20px 0;
-  width: 100%; /* Make the form take up full width */
+  width: 100%;
 }
 
-/* Style the form elements inside the new-tweet section */
+/* Styles for the form within the New Tweet Section */
 .new-tweet form {
   display: flex;
   flex-direction: column;
-  width: 100%; /* Make the form take up full width */
+  width: 100%;
 }
 
+/* Styles for labels within the New Tweet Section */
 .new-tweet label {
   font-weight: bold;
   margin-bottom: 20px;
 }
 
+/* Styles for the footer within the New Tweet Section */
 .new-tweet .form-footer {
   display: flex;
-  justify-content: space-between; /* Put items at the start and end of the container */
-  align-items: center; /* Vertically center items */
+  justify-content: space-between;
+  align-items: center;
   margin-top: 10px;
 }
 
+/* Styles for the textarea within the New Tweet Section */
 .new-tweet textarea {
   display: flex;
   flex-direction: column;
@@ -33,6 +36,7 @@
   background-color: transparent;
 }
 
+/* Styles for buttons within the New Tweet Section */
 .new-tweet button {
   background-color: rgb(216, 159, 12);
   color: white;
@@ -41,24 +45,20 @@
   border-radius: 5px;
   cursor: pointer;
   width: auto;
-  
 }
 
-/* styles.css */
-
-/* Style the error message container */
+/* Styles for Error Messages */
 .error-message {
   color: red;
   font-size: 20px;
   margin-top: 8px;
   display: none;
-  border: 2px solid red; /* Add a red border */
-  padding: 8px; /* Add padding to create space between the border and text */
-  font-weight: bold; /* Make the font bold */
+  border: 2px solid red;
+  padding: 8px;
+  font-weight: bold;
 }
 
-
-/* Style the counter output */
+/* Styles for the Character Counter */
 .new-tweet .counter {
   font-size: 30px;
   color: #181515;
