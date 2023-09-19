@@ -9,20 +9,25 @@ The goal of this project is to create a functional and visually appealing Single
 - Main Page
 
 ![main-page](https://github.com/hinali/tweeter/blob/master/public/images/main_page.png)
+
 - Compose Tweet
 
 ![compose-tweet](https://github.com/hinali/tweeter/blob/master/public/images/compose-tweet.png)
 
 - Tweets
+
 ![tweets](https://github.com/hinali/tweeter/blob/master/public/images/tweets.png)
 
 - Error Message
+
 ![error-message](https://github.com/hinali/tweeter/blob/master/public/images/error-message.png)
 
 - Responsie design for header
+
 ![header](https://github.com/hinali/tweeter/blob/master/public/images/mobile-view.png)
 
 - Responsie design for tweets
+
 ![Tweets](https://github.com/hinali/tweeter/blob/master/public/images/responsivedesign-tweets.png)
 
 
