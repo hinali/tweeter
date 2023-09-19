@@ -6,9 +6,19 @@ The goal of this project is to create a functional and visually appealing Single
 
 # Schreenshots 
 
-- page1
-- page2
-- page 3
+- Main Page
+
+![main-page](https://github.com/hinali/tweeter/blob/master/public/images/main_page.png)
+- Compose Tweet
+
+![compose-tweet](https://github.com/hinali/tweeter/blob/master/public/images/compose-tweet.png)
+
+- Tweets
+![tweets](https://github.com/hinali/tweeter/blob/master/public/images/tweets.png)
+
+- Error Message
+![error-message](https://github.com/hinali/tweeter/blob/master/public/images/error-message.png)
+
 
 ## Dependencies
 
